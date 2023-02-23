@@ -1,0 +1,95 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#parentCtn {
+  display: grid;
+  grid-template-rows: 7rem auto 20rem;
+}
+
+h1 {
+  letter-spacing: -.13em;
+  font-weight: 800;
+}
+
+button {
+  font-size: 2em;
+  font-weight: 900;
+  box-shadow: 
+    20px 20px 60px #0e0e0e,
+    -20px -20px 80px #3a3a3a;
+  transition: .3s ease-in-out;
+}
+
+#btnCtn :nth-child(1) {
+  color: rgb(100, 255, 0);
+  border: solid 1px;
+  outline: none;
+}
+
+#btnCtn :nth-child(2) {
+  color: rgb(255, 255, 0);
+  border: solid 1px;
+  outline: none;
+}
+
+#btnCtn :nth-child(3) {
+  color: rgb(255, 0, 0);
+  border: solid 1px;
+  outline: none;
+}
+
+#btnCtn :nth-child(1):hover {
+  color: #000;
+  background-color: rgb(100, 255, 0);
+  border-radius: 7px;
+  box-shadow: 
+    5px 5px 5px #000000,
+   -5px -5px 5px #000000;
+   transform: scale(105%);
+}
+
+#btnCtn :nth-child(2):hover {
+  color: #000;
+  background-color: rgb(255, 255, 0);
+  border-radius: 7px;
+  transform: scale(105%);
+}
+
+#btnCtn :nth-child(3):hover {
+  color: #000;
+  background-color: rgb(255, 0, 0);
+  border-radius: 7px;
+  transform: scale(105%);
+}
+
+td {
+  border-radius: 7px;
+  height: 4.5rem;
+  width: 5rem;
+  box-shadow: 
+  inset 5px 5px 29px #111111,
+  inset -5px -5px 29px #3b3b3b;
+}
